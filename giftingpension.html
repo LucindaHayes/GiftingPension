@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5CF2KTLQL"></script>
 <script>
@@ -52,12 +56,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,30,54,0.96
 .nav-logo{display:flex;flex-direction:column;line-height:1.15;text-decoration:none;}
 .nav-logo-main{font-family:var(--font-head);font-size:17px;font-weight:800;color:#fff;letter-spacing:-.01em;}
 .nav-logo-main span{color:var(--teal-light);}
-.nav-logo-sub{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-light);margin-top:2px;}
+.nav-logo-sub{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-light);margin-top:2px;}
 .nav-links{display:flex;align-items:center;gap:4px;}
-.nav-links a{font-family:var(--font-head);font-size:12px;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,0.65);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color .15s,background .15s;}
+.nav-links a{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,0.65);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color .15s,background .15s;}
 .nav-links a:hover{color:var(--teal-light);background:rgba(0,119,123,0.1);}
-.nav-cta{font-family:var(--font-head);font-size:14px;font-weight:700;letter-spacing:.03em;padding:9px 22px;background:var(--teal);color:#fff;border:none;border-radius:6px;cursor:pointer;text-decoration:none;transition:background .15s;}
+.nav-cta{font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:.03em;padding:9px 22px;background:var(--teal);color:#fff;border:none;border-radius:6px;cursor:pointer;text-decoration:none;transition:background .15s;}
 .nav-cta:hover{background:var(--teal-light);}
+.nav-back{font-family:var(--font-head);font-size:13px;font-weight:600;color:rgba(255,255,255,0.55);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s;}
+.nav-back:hover{color:var(--teal-light);}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
 .nav-hamburger span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.7);border-radius:2px;}
 
@@ -66,15 +72,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,30,54,0.96
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 75% 30%,rgba(9,141,202,0.18) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 75%,rgba(0,119,123,0.2) 0%,transparent 55%),linear-gradient(150deg,var(--navy-deeper) 0%,#0A2240 55%,#061525 100%);}
 .hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(0,119,123,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,119,123,0.06) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 80% at 50% 50%,black 20%,transparent 75%);}
 .hero-inner{max-width:var(--max);margin:0 auto;width:100%;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.hero-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-light);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.hero-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-light);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
 .hero-label::before{content:'';display:block;width:24px;height:1px;background:var(--teal);}
 .hero h1{font-family:var(--font-head);font-size:clamp(40px,5vw,66px);font-weight:800;line-height:1.08;letter-spacing:-.025em;color:#fff;margin-bottom:26px;}
 .hero h1 em{font-style:normal;color:var(--teal-light);}
-.hero-sub{font-family:var(--font-body);font-size:17px;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:38px;max-width:480px;}
+.hero-sub{font-family:var(--font-body);font-size:17px;line-height:1.7;color:rgba(255,255,255,0.62);margin-bottom:38px;max-width:480px;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-primary{font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:.03em;padding:13px 28px;background:var(--teal);color:#fff;border:none;border-radius:7px;cursor:pointer;text-decoration:none;transition:background .15s,transform .15s;display:inline-block;box-shadow:0 6px 24px rgba(0,119,123,0.35);}
+.btn-primary{font-family:var(--font-head);font-size:14px;font-weight:700;letter-spacing:.03em;padding:13px 28px;background:var(--teal);color:#fff;border:none;border-radius:7px;cursor:pointer;text-decoration:none;transition:background .15s,transform .15s;display:inline-block;box-shadow:0 6px 24px rgba(0,119,123,0.35);}
 .btn-primary:hover{background:var(--teal-light);transform:translateY(-1px);}
-.btn-ghost{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:.03em;padding:13px 28px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.2);border-radius:7px;cursor:pointer;text-decoration:none;transition:all .15s;display:inline-block;}
+.btn-ghost{font-family:var(--font-head);font-size:14px;font-weight:600;letter-spacing:.03em;padding:13px 28px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.2);border-radius:7px;cursor:pointer;text-decoration:none;transition:all .15s;display:inline-block;}
 .btn-ghost:hover{background:rgba(255,255,255,0.1);border-color:var(--teal);}
 .hero-stat-cards{display:flex;flex-direction:column;gap:12px;}
 .hero-stat{background:rgba(255,255,255,0.04);border:1px solid var(--border-w);border-radius:10px;padding:20px 24px;position:relative;overflow:hidden;}
@@ -82,21 +88,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,30,54,0.96
 .hero-stat.teal::before{background:var(--teal);}
 .hero-stat.amber::before{background:var(--amber);}
 .hero-stat.blue::before{background:var(--blue);}
-.hero-stat-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.50);margin-bottom:6px;}
+.hero-stat-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:6px;}
 .hero-stat-val{font-family:var(--font-head);font-size:26px;font-weight:800;color:#fff;letter-spacing:-.02em;}
 .hero-stat.teal .hero-stat-val{color:var(--teal-light);}
 .hero-stat.amber .hero-stat-val{color:var(--amber);}
 .hero-stat.blue .hero-stat-val{color:var(--blue);}
-.hero-stat-sub{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.68);margin-top:5px;line-height:1.45;}
+.hero-stat-sub{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.45);margin-top:5px;line-height:1.45;}
 
 /* SHARED */
 section{padding:96px 40px;}
 .section-inner{max-width:var(--max);margin:0 auto;}
-.eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-light);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-light);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
 .eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--teal);}
 h2{font-family:var(--font-head);font-size:clamp(30px,3.5vw,46px);font-weight:800;line-height:1.12;letter-spacing:-.025em;color:#fff;margin-bottom:20px;}
 h2 em{font-style:normal;color:var(--teal-light);}
-.lead{font-family:var(--font-body);font-size:17px;line-height:1.7;color:rgba(255,255,255,0.72);max-width:620px;}
+.lead{font-family:var(--font-body);font-size:17px;line-height:1.7;color:rgba(255,255,255,0.55);max-width:620px;}
 .section-rule{border:none;border-top:1px solid var(--border-w);margin:0;}
 
 /* PROBLEM */
@@ -106,16 +112,16 @@ h2 em{font-style:normal;color:var(--teal-light);}
 .problem-story p strong{color:#fff;font-weight:700;}
 .problem-story blockquote{border-left:3px solid var(--teal);padding:16px 0 16px 24px;margin:28px 0;font-style:italic;font-size:17px;color:rgba(255,255,255,0.7);}
 .tax-wall{background:rgba(255,255,255,0.04);border:1px solid var(--border-w);border-radius:10px;padding:28px;}
-.tax-wall-title{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
+.tax-wall-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
 .tax-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-family:var(--font-body);font-size:14.5px;}
 .tax-row:last-child{border-bottom:none;}
-.tax-row-label{color:rgba(255,255,255,0.72);}
+.tax-row-label{color:rgba(255,255,255,0.55);}
 .tax-row-val{font-family:var(--font-mono);font-weight:500;color:#fff;}
 .tax-row-val.neg{color:#E57373;}
 .tax-row-val.pos{color:var(--teal-light);}
 .tax-row.total{margin-top:4px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.2);}
 .tax-row.total .tax-row-label{font-weight:700;color:#fff;}
-.tax-note{font-family:var(--font-body);font-size:12px;color:rgba(255,255,255,0.3);margin-top:12px;font-style:italic;line-height:1.75;}
+.tax-note{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.3);margin-top:12px;font-style:italic;line-height:1.6;}
 
 /* HOW */
 .how{background:var(--navy-deeper);}
@@ -123,14 +129,14 @@ h2 em{font-style:normal;color:var(--teal-light);}
 .tranches{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
 .tranche{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:28px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s;}
 .tranche:hover{transform:translateY(-2px);border-color:rgba(0,119,123,0.4);}
-.tranche-num{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,0.25);margin-bottom:16px;}
+.tranche-num{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,0.25);margin-bottom:16px;}
 .tranche-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:18px;}
 .tranche-icon.g{background:rgba(0,119,123,0.2);border:1px solid rgba(0,119,123,0.4);}
 .tranche-icon.a{background:rgba(200,154,58,0.15);border:1px solid rgba(200,154,58,0.3);}
 .tranche-icon.b{background:rgba(9,141,202,0.15);border:1px solid rgba(9,141,202,0.3);}
 .tranche-icon.v{background:rgba(120,80,180,0.15);border:1px solid rgba(120,80,180,0.3);}
 .tranche h3{font-family:var(--font-head);font-size:18px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.25;}
-.tranche p{font-family:var(--font-body);font-size:15px;line-height:1.78;color:rgba(255,255,255,0.5);}
+.tranche p{font-family:var(--font-body);font-size:14px;line-height:1.65;color:rgba(255,255,255,0.5);}
 .tranche-bar{position:absolute;bottom:0;left:0;right:0;height:3px;}
 .tranche-bar.g{background:var(--teal);}
 .tranche-bar.a{background:var(--amber);}
@@ -143,18 +149,18 @@ h2 em{font-style:normal;color:var(--teal-light);}
 .why-explain p{font-family:var(--font-body);font-size:16px;line-height:1.8;color:rgba(255,255,255,0.6);margin-bottom:20px;}
 .why-explain strong{color:#fff;font-weight:700;}
 .why-formula{background:rgba(255,255,255,0.04);border:1px solid var(--border-w);border-radius:10px;padding:28px;}
-.formula-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
-.formula-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:var(--font-body);font-size:15px;}
+.formula-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
+.formula-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:var(--font-body);font-size:14px;}
 .formula-row:last-child{border-bottom:none;}
-.fl{color:rgba(255,255,255,0.72);}
+.fl{color:rgba(255,255,255,0.55);}
 .fv{font-family:var(--font-mono);font-weight:500;color:var(--teal-light);}
 .fv.amber{color:var(--amber);}
-.fv.dim{color:rgba(255,255,255,0.50);}
+.fv.dim{color:rgba(255,255,255,0.35);}
 .formula-row.total{margin-top:8px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.15);}
 .formula-row.total .fl{color:#fff;font-weight:700;}
 .formula-row.total .fv{font-size:18px;}
 .why-callout{background:rgba(0,119,123,0.1);border:1px solid rgba(0,119,123,0.3);border-radius:10px;padding:20px 24px;margin-top:20px;}
-.why-callout p{font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,0.7);line-height:1.78;margin:0;}
+.why-callout p{font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,0.7);line-height:1.65;margin:0;}
 .why-callout strong{color:var(--teal-light);}
 
 /* WHO */
@@ -166,43 +172,43 @@ h2 em{font-style:normal;color:var(--teal-light);}
 .who-card.vc::before{background:var(--teal);}
 .who-card.ria::before{background:var(--amber);}
 .who-card.estate::before{background:var(--blue);}
-.who-card-tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;display:inline-block;margin-bottom:18px;}
+.who-card-tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:100px;display:inline-block;margin-bottom:18px;}
 .who-card-tag.vc{background:rgba(0,119,123,0.15);color:var(--teal-light);border:1px solid rgba(0,119,123,0.3);}
 .who-card-tag.ria{background:rgba(200,154,58,0.12);color:var(--amber);border:1px solid rgba(200,154,58,0.25);}
 .who-card-tag.estate{background:rgba(9,141,202,0.12);color:var(--blue);border:1px solid rgba(9,141,202,0.25);}
 .who-card h3{font-family:var(--font-head);font-size:20px;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.25;}
-.who-card p{font-family:var(--font-body);font-size:15px;line-height:1.78;color:rgba(255,255,255,0.5);margin-bottom:20px;}
+.who-card p{font-family:var(--font-body);font-size:14px;line-height:1.65;color:rgba(255,255,255,0.5);margin-bottom:20px;}
 .who-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
-.who-list li{font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,0.5);display:flex;align-items:flex-start;gap:10px;line-height:1.5;}
-.who-list li::before{content:'→';color:var(--teal-light);flex-shrink:0;font-family:var(--font-mono);font-size:12px;margin-top:2px;}
+.who-list li{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.5);display:flex;align-items:flex-start;gap:10px;line-height:1.5;}
+.who-list li::before{content:'→';color:var(--teal-light);flex-shrink:0;font-family:var(--font-mono);font-size:13px;margin-top:2px;}
 .who-clients{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.08);}
-.who-clients-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:10px;}
+.who-clients-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:10px;}
 .who-client-chips{display:flex;flex-wrap:wrap;gap:6px;}
-.chip{font-family:var(--font-mono);font-size:10px;padding:4px 10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:100px;color:rgba(255,255,255,0.68);}
+.chip{font-family:var(--font-mono);font-size:11px;padding:4px 10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:100px;color:rgba(255,255,255,0.45);}
 
 /* NUMBERS */
 .numbers{background:var(--navy-dark);}
 .numbers-top{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:40px;}
 .calc-wrap{background:rgba(255,255,255,0.03);border:1px solid var(--border-w);border-radius:12px;overflow:hidden;}
 .calc-header{background:rgba(0,0,0,0.4);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border-w);}
-.calc-header-title{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
-.calc-header-sub{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.25);}
+.calc-header-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
+.calc-header-sub{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.25);}
 .calc-body{padding:24px;}
 .calc-inputs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;}
 .ci{display:flex;flex-direction:column;gap:6px;}
-.ci label{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);display:flex;justify-content:space-between;}
+.ci label{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.85);display:flex;justify-content:space-between;}
 .ci-val{color:#fff;font-weight:700;}
 input[type=range]{width:100%;height:2px;-webkit-appearance:none;appearance:none;background:rgba(255,255,255,0.15);border-radius:1px;outline:none;cursor:pointer;}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--teal);cursor:pointer;}
 .calc-results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px;}
 .cr{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:16px 18px;}
 .cr.total{grid-column:1/-1;background:rgba(0,119,123,0.1);border-color:rgba(0,119,123,0.3);}
-.cr-lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:8px;}
+.cr-lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:8px;}
 .cr-val{font-family:var(--font-head);font-size:22px;font-weight:800;color:var(--teal-light);}
 .cr.total .cr-val{font-size:28px;}
-.cr-sub{font-family:var(--font-body);font-size:12px;color:rgba(255,255,255,0.50);margin-top:4px;}
+.cr-sub{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.35);margin-top:4px;}
 .calc-legend{display:flex;gap:24px;margin-bottom:14px;}
-.cl-item{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.7);letter-spacing:.06em;}
+.cl-item{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.7);letter-spacing:.06em;}
 .cl-dot{width:10px;height:10px;border-radius:50%;}
 .chart-area{height:220px;position:relative;}
 
@@ -212,17 +218,17 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .steps{display:flex;flex-direction:column;gap:0;}
 .step{display:grid;grid-template-columns:48px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
 .step:last-child{border-bottom:none;}
-.step-num{font-family:var(--font-mono);font-size:13px;color:var(--teal-light);font-weight:500;padding-top:2px;}
+.step-num{font-family:var(--font-mono);font-size:14px;color:var(--teal-light);font-weight:500;padding-top:2px;}
 .step-content h4{font-family:var(--font-head);font-size:16px;font-weight:700;color:#fff;margin-bottom:6px;}
-.step-content p{font-family:var(--font-body);font-size:15px;line-height:1.78;color:rgba(255,255,255,0.5);}
+.step-content p{font-family:var(--font-body);font-size:14px;line-height:1.65;color:rgba(255,255,255,0.5);}
 .process-right{position:sticky;top:96px;}
 .advisor-box{background:rgba(255,255,255,0.04);border:1px solid var(--border-w);border-radius:12px;padding:28px;}
-.advisor-box-title{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
+.advisor-box-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px;}
 .advisor-feature{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.07);}
 .advisor-feature:last-child{border-bottom:none;}
 .af-icon{width:34px;height:34px;border-radius:50%;background:rgba(0,119,123,0.2);border:1px solid rgba(0,119,123,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;}
 .af-content h5{font-family:var(--font-head);font-size:14px;font-weight:700;color:#fff;margin-bottom:3px;}
-.af-content p{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.68);line-height:1.55;}
+.af-content p{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);line-height:1.55;}
 
 /* ABOUT */
 .about{background:var(--navy-dark);}
@@ -232,7 +238,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .about-stats{display:flex;flex-direction:column;gap:14px;}
 .about-stat{padding:20px 22px;background:rgba(255,255,255,0.04);border:1px solid var(--border-w);border-radius:10px;}
 .as-val{font-family:var(--font-head);font-size:30px;font-weight:800;color:var(--teal-light);}
-.as-lbl{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.68);margin-top:5px;line-height:1.5;}
+.as-lbl{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);margin-top:5px;line-height:1.5;}
 
 /* CTA */
 .cta-section{background:var(--teal-dark);padding:96px 40px;position:relative;overflow:hidden;}
@@ -244,12 +250,12 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .cta-left p{font-family:var(--font-body);font-size:16px;color:rgba(255,255,255,0.65);line-height:1.7;}
 .cta-form{display:flex;flex-direction:column;gap:14px;}
 .cta-field{display:flex;flex-direction:column;gap:6px;}
-.cta-field label{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
+.cta-field label{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
 .cta-field input,.cta-field select,.cta-field textarea{padding:12px 16px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:6px;color:#fff;font-family:var(--font-body);font-size:15px;outline:none;transition:border .15s;width:100%;}
 .cta-field input:focus,.cta-field select:focus,.cta-field textarea:focus{border-color:rgba(0,180,180,0.5);}
 .cta-field select option{background:#003A3D;color:#fff;}
 .cta-field textarea{resize:vertical;min-height:80px;}
-.cta-submit{padding:13px 28px;background:#fff;color:var(--teal-dark);border:none;border-radius:7px;font-family:var(--font-head);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:background .15s;align-self:flex-start;}
+.cta-submit{padding:13px 28px;background:#fff;color:var(--teal-dark);border:none;border-radius:7px;font-family:var(--font-head);font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:background .15s;align-self:flex-start;}
 .cta-submit:hover{background:rgba(255,255,255,0.9);}
 .cta-field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 
@@ -260,24 +266,24 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .article-card{border:1px solid rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;transition:transform .2s,border-color .2s;cursor:pointer;text-decoration:none;display:block;color:inherit;background:var(--navy-deeper);}
 .article-card:hover{transform:translateY(-3px);border-color:rgba(0,119,123,0.45);}
 .article-card-top{padding:24px 24px 20px;border-bottom:1px solid rgba(255,255,255,0.07);}
-.article-tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:100px;display:inline-block;margin-bottom:14px;}
+.article-tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:100px;display:inline-block;margin-bottom:14px;}
 .article-tag.mechanics{background:rgba(0,119,123,0.15);color:var(--teal-light);border:1px solid rgba(0,119,123,0.3);}
 .article-tag.planning{background:rgba(200,154,58,0.12);color:var(--amber);border:1px solid rgba(200,154,58,0.25);}
 .article-tag.comparison{background:rgba(9,141,202,0.12);color:var(--blue);border:1px solid rgba(9,141,202,0.25);}
 .article-tag.strategy{background:rgba(120,80,180,0.12);color:#A87DD8;border:1px solid rgba(120,80,180,0.25);}
 .article-card h3{font-family:var(--font-head);font-size:17px;font-weight:700;color:#fff;line-height:1.3;margin-bottom:10px;}
-.article-card p{font-family:var(--font-body);font-size:15px;line-height:1.75;color:rgba(255,255,255,0.5);}
+.article-card p{font-family:var(--font-body);font-size:14px;line-height:1.6;color:rgba(255,255,255,0.5);}
 .article-card-bottom{padding:14px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,0.2);}
-.article-meta{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:.04em;}
-.article-read{font-family:var(--font-mono);font-size:10px;color:var(--teal-light);letter-spacing:.06em;}
+.article-meta{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:.04em;}
+.article-read{font-family:var(--font-mono);font-size:11px;color:var(--teal-light);letter-spacing:.06em;}
 .article-card.featured{grid-column:1/-1;display:grid;grid-template-columns:3fr 2fr;}
 .article-card.featured .article-card-top{border-bottom:none;border-right:1px solid rgba(255,255,255,0.07);padding:32px;}
 .article-card.featured h3{font-size:22px;}
 .article-card.featured .article-card-right{padding:32px;display:flex;flex-direction:column;justify-content:space-between;background:rgba(0,0,0,0.15);}
 .article-card.featured .article-card-bottom{padding:0;border:none;background:transparent;}
 .article-toc{list-style:none;display:flex;flex-direction:column;gap:8px;}
-.article-toc li{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.5);display:flex;align-items:flex-start;gap:8px;line-height:1.45;}
-.article-toc li::before{content:'§';font-family:var(--font-mono);font-size:10px;color:var(--teal-light);flex-shrink:0;margin-top:2px;}
+.article-toc li{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.5);display:flex;align-items:flex-start;gap:8px;line-height:1.45;}
+.article-toc li::before{content:'§';font-family:var(--font-mono);font-size:11px;color:var(--teal-light);flex-shrink:0;margin-top:2px;}
 
 /* FAQ */
 .faq{background:var(--navy-deeper);}
@@ -285,14 +291,14 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 .faq-item{padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.08);}
 .faq-item:nth-last-child(-n+2){border-bottom:none;}
 .faq-q{font-family:var(--font-head);font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.35;}
-.faq-a{font-family:var(--font-body);font-size:14.5px;line-height:1.75;color:rgba(255,255,255,0.72);}
+.faq-a{font-family:var(--font-body);font-size:14.5px;line-height:1.75;color:rgba(255,255,255,0.55);}
 .faq-a strong{color:#fff;font-weight:700;}
 
 /* ARTICLE MODAL */
 #article-modal{display:none;position:fixed;inset:0;background:rgba(5,10,20,0.85);z-index:200;overflow-y:auto;padding:40px 24px;}
 .modal-wrap{max-width:760px;margin:0 auto;background:var(--navy-dark);border:1px solid var(--border-w);border-radius:12px;overflow:hidden;}
 .modal-header{background:rgba(0,0,0,0.4);padding:20px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border-w);}
-.modal-header-title{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.50);}
+.modal-header-title{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);}
 .modal-close{background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:20px;line-height:1;}
 .modal-close:hover{color:#fff;}
 #article-content{padding:48px;}
@@ -302,52 +308,45 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 #article-content strong{color:#fff!important;font-weight:700!important;}
 #article-content em{font-style:italic!important;}
 .modal-footer{padding:24px 48px;border-top:1px solid var(--border-w);display:flex;justify-content:space-between;align-items:center;}
-.modal-footer p{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.25);}
+.modal-footer p{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.25);}
 
 /* FOOTER */
 footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px 40px 32px;}
 .footer-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:start;gap:40px;flex-wrap:wrap;margin-bottom:44px;}
 .footer-brand .nav-logo-main{color:#fff;}
-.footer-brand p{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.3);margin-top:10px;max-width:280px;line-height:1.78;}
-.footer-links h5{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:14px;}
-.footer-links a{display:block;font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.68);text-decoration:none;margin-bottom:10px;transition:color .15s;}
+.footer-brand p{font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.3);margin-top:10px;max-width:280px;line-height:1.65;}
+.footer-links h5{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:14px;}
+.footer-links a{display:block;font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:10px;transition:color .15s;}
 .footer-links a:hover{color:var(--teal-light);}
 .footer-bottom{max-width:var(--max);margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-.footer-bottom p{font-family:var(--font-body);font-size:11px;color:rgba(255,255,255,0.2);line-height:1.75;max-width:700px;}
+.footer-bottom p{font-family:var(--font-body);font-size:12px;color:rgba(255,255,255,0.2);line-height:1.6;max-width:700px;}
 .footer-bottom-links{display:flex;gap:20px;flex-shrink:0;}
-.footer-bottom-links a{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.25);text-decoration:none;}
+.footer-bottom-links a{font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.25);text-decoration:none;}
 .footer-bottom-links a:hover{color:rgba(255,255,255,0.5);}
 
 /* MOBILE NAV */
 .mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--navy-dark);border-bottom:1px solid var(--border);padding:20px 32px;z-index:99;flex-direction:column;gap:14px;}
 .mobile-menu.open{display:flex;}
-.mobile-menu a{font-family:var(--font-head);font-size:13px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;}
+.mobile-menu a{font-family:var(--font-head);font-size:14px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;}
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero-inner,.problem-grid,.how-intro,.why-grid,.process-grid,.about-grid,.cta-inner,.numbers-top,.resources-top{grid-template-columns:1fr;gap:40px;}
-  .tranches,.who-grid{grid-template-columns:1fr;}
-  .calc-inputs{grid-template-columns:1fr;}
-  .calc-results{grid-template-columns:1fr 1fr;}
-  .nav-links,.nav-cta{display:none;}
-  .nav-hamburger{display:flex;}
-  .hero{padding-top:100px;}
-  section{padding:64px 24px;}
-  .cta-field-row{grid-template-columns:1fr;}
-  .articles{grid-template-columns:1fr;}
-  .article-card.featured{grid-template-columns:1fr;}
-  .article-card.featured .article-card-top{border-right:none;border-bottom:1px solid rgba(255,255,255,0.07);}
-  .faq-grid{grid-template-columns:1fr;}
-  .faq-item:nth-last-child(-n+2){border-bottom:1px solid rgba(255,255,255,0.08);}
-  .faq-item:last-child{border-bottom:none;}
-  #article-content{padding:28px;}
-  .modal-footer{padding:20px 28px;flex-direction:column;gap:12px;align-items:flex-start;}
-  footer{padding:40px 24px 24px;}
-}
-@media(max-width:580px){
-  .calc-results{grid-template-columns:1fr;}
-  .hero-stat-cards{gap:8px;}
-}
+  /* ── RESPONSIVE (patched) ─────────────────────── */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+  .hamburger span { width: 22px; height: 2px; background: rgba(255,255,255,0.7); border-radius: 2px; }
+  .fi { opacity:1; transform:none; max-width:1260px; margin-left:auto; margin-right:auto; width:100%; }
+  @media(max-width:1260px){
+    nav { padding:0 40px; }
+    section, footer { padding-left:40px; padding-right:40px; }
+  }
+  @media(max-width:900px){
+    nav { padding:0 20px; }
+    .nav-links, .nav-actions { display:none; }
+    .hamburger { display:flex; }
+    section, footer { padding-left:20px; padding-right:20px; }
+  }
+  @media(max-width:580px){
+    .sh2 { font-size:clamp(24px,7vw,36px) !important; }
+    .hero-actions { flex-direction:column; align-items:flex-start; }
+  }
 </style>
 </head>
 <body>
@@ -367,6 +366,7 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
       <a href="#process">Working With Us</a>
       <a href="#about">About</a>
     </div>
+    <a href="https://www.giftingnetwork.com" class="nav-back">← Back to GiftingNetwork</a>
     <a href="#contact" class="nav-cta">Schedule a Call</a>
     <div class="nav-hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -539,7 +539,7 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
       <div class="who-card vc">
         <span class="who-card-tag vc">VC-Affiliated Wealth</span>
         <h3>VC-affiliated wealth management arms</h3>
-        <p>VC-affiliated wealth management arms are building family-office capability for founders post-IPO or M&A — exactly the profile the Young PIF is designed for.</p>
+        <p>Firms like a16z Perennial and GC Wealth are building family-office capability inside VC wrappers. Their clients are founders post-IPO or M&A — exactly the profile the Young PIF is designed for.</p>
         <ul class="who-list">
           <li>Clients have near-zero basis positions from founder equity</li>
           <li>Charitable intent is often present but unstructured</li>
@@ -549,14 +549,14 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
         <div class="who-clients">
           <div class="who-clients-label">Relevant firms</div>
           <div class="who-client-chips">
-            <span class="chip">Founder liquidity events</span><span class="chip">Post-IPO equity</span><span class="chip">M&amp;A proceeds</span>
+            <span class="chip">a16z Perennial</span><span class="chip">GC Wealth</span><span class="chip">Thrive Capital</span><span class="chip">Lightspeed</span>
           </div>
         </div>
       </div>
       <div class="who-card ria">
         <span class="who-card-tag ria">Independent RIAs</span>
         <h3>RIAs serving tech executives &amp; entrepreneurs</h3>
-        <p>Independent RIAs serving tech executives and entrepreneurs work with clients whose wealth came from RSUs, options, and business exits. Many have held appreciated positions for years and face the same tax wall.</p>
+        <p>Firms like Cerity Partners, Brighton Jones, Pathstone, and Lido Advisors serve clients whose wealth came from RSUs, options, and business exits. Many have held appreciated positions for years and face the same tax wall.</p>
         <ul class="who-list">
           <li>Long-tenured tech employees with large RSU accumulations</li>
           <li>Business owners who sold and held stock in the acquirer</li>
@@ -566,7 +566,7 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
         <div class="who-clients">
           <div class="who-clients-label">Relevant firms</div>
           <div class="who-client-chips">
-            <span class="chip">RSU &amp; option holders</span><span class="chip">Business exit proceeds</span><span class="chip">Concentrated positions</span><span class="chip">Tech executives</span>
+            <span class="chip">Cerity Partners</span><span class="chip">Pathstone</span><span class="chip">Brighton Jones</span><span class="chip">Lido Advisors</span><span class="chip">Jordan Park</span>
           </div>
         </div>
       </div>
@@ -628,8 +628,8 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
         <div class="chart-area"><canvas id="wc"></canvas></div>
       </div>
     </div>
-    <p style="font-family:var(--font-body);font-size:14px;color:rgba(255,255,255,0.25);margin-top:16px;line-height:1.75;">Assumes 8% total portfolio return. CG rate 23.8% (federal). Dividend yield 4.5%, qualified dividend tax treatment. Deduction savings and CG tax avoided reinvested at year 0 and compounded at portfolio return. Life expectancy interpolated from IRS Publication 1457 Table V. This is illustrative and does not constitute tax, legal, or investment advice.</p>
-    <p style="font-family:var(--font-body);font-size:14px;color:rgba(200,154,58,0.7);margin-top:10px;line-height:1.75;border-left:2px solid rgba(200,154,58,0.4);padding-left:12px;">⚠ Deduction limit: Contributions of appreciated assets to a PIF are deductible up to <strong style="color:rgba(200,154,58,0.9);">30% of adjusted gross income</strong> in the year of contribution, with a 5-year carryforward for any excess. For large positions, the full deduction may be absorbed over multiple years. A tax advisor should model the actual utilization schedule based on the donor's projected AGI.</p>
+    <p style="font-family:var(--font-body);font-size:12.5px;color:rgba(255,255,255,0.25);margin-top:16px;line-height:1.6;">Assumes 8% total portfolio return. CG rate 23.8% (federal). Dividend yield 4.5%, qualified dividend tax treatment. Deduction savings and CG tax avoided reinvested at year 0 and compounded at portfolio return. Life expectancy interpolated from IRS Publication 1457 Table V. This is illustrative and does not constitute tax, legal, or investment advice.</p>
+    <p style="font-family:var(--font-body);font-size:12.5px;color:rgba(200,154,58,0.7);margin-top:10px;line-height:1.6;border-left:2px solid rgba(200,154,58,0.4);padding-left:12px;">⚠ Deduction limit: Contributions of appreciated assets to a PIF are deductible up to <strong style="color:rgba(200,154,58,0.9);">30% of adjusted gross income</strong> in the year of contribution, with a 5-year carryforward for any excess. For large positions, the full deduction may be absorbed over multiple years. A tax advisor should model the actual utilization schedule based on the donor's projected AGI.</p>
   </div>
 </section>
 
@@ -797,7 +797,7 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
     <div class="cta-left">
       <h2>Your youngest clients<br>are waiting for <em>this conversation.</em></h2>
       <p>Schedule a 20-minute call with the GiftingNetwork team. We'll walk through the mechanics, discuss your client profile, and model the numbers for a specific situation — including the full 50-year compounding picture for a younger donor.</p>
-      <p style="margin-top:20px;font-size:15px;color:rgba(255,255,255,0.50);">We work with RIAs, VC-affiliated wealth managers, estate attorneys, and CPAs. No platform commitment required to explore.</p>
+      <p style="margin-top:20px;font-size:14px;color:rgba(255,255,255,0.35);">We work with RIAs, VC-affiliated wealth managers, estate attorneys, and CPAs. No platform commitment required to explore.</p>
     </div>
     <div>
       <form class="cta-form" onsubmit="handleSubmit(event)">
@@ -858,11 +858,11 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 GiftingNetwork. GiftingPension is an educational resource and does not constitute tax, legal, or investment advice. All illustrations are hypothetical. Consult qualified counsel before implementing any planned giving strategy. IRC §642(c)(5).</p>
+    <p>© 2026 GiftingNetwork. GiftingPension is an educational resource and does not constitute tax, legal, or investment advice. All illustrations are hypothetical. Consult qualified counsel before implementing any planned giving strategy. IRC §642(c)(5).</p>
     <div class="footer-bottom-links">
-      <a href="mailto:support@giftingnetwork.com">Privacy Policy</a>
-      <a href="mailto:support@giftingnetwork.com">Terms of Use</a>
-      <a href="mailto:support@giftingnetwork.com">Disclosures</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Disclosures</a>
     </div>
   </div>
 </footer>
@@ -922,11 +922,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* ARTICLE MODAL */
 var articles = {};
-articles["intro"] = {tag:"Introduction",tagClass:"planning",body:"<h2>Introducing GiftingPension: Pooled Income Funds for the Next Generation of Philanthropic Clients</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:36px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; INTRODUCTION &middot; 14 MIN READ</p><p>Most financial advisors have seen this client before. They are in their late 30s or mid-40s. They have a concentrated position &mdash; founder equity, accumulated RSUs, or a long-held public stock with nearly zero basis. They want to diversify, they have genuine charitable intent, and they need to replace the income that is about to disappear at a liquidity event.</p><p>You run the Charitable Remainder Trust analysis. And then the math locks them out. A 38-year-old funding a CRT almost always fails the 10% remainder test. Add a spouse or a child as a co-beneficiary and it fails for certain. The CRT &mdash; the workhorse of charitable income planning for 50 years &mdash; simply does not work for this client.</p><p>GiftingPension is built for exactly this moment. It is GiftingNetwork's dedicated channel for the Young Pooled Income Fund &mdash; a vehicle that Congress created in 1969 and that the IRS has quietly kept available ever since for the clients most advisors have been telling for years that nothing exists for them.</p><h3>The Vehicle: What a Pooled Income Fund Actually Is</h3><p>A Pooled Income Fund is a charitable trust maintained by a public charitable organization under IRC Section 642(c)(5). It commingles contributions from multiple donors, paying each donor their proportional share of the fund's distributable net income for their lifetime. When the last income beneficiary passes, that donor's share of the principal passes irrevocably to the charitable organization.</p><p>Three structural features make it different from everything else in the charitable planning toolkit:</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:22px 26px;margin:22px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;\">Three structural advantages</div><div style=\"display:flex;flex-direction:column;gap:14px;\"><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">1</div><div><strong style=\"color:#fff;\">Capital gains bypass.</strong><span style=\"color:rgba(255,255,255,0.6);\"> The transfer of appreciated assets to a PIF does not trigger capital gains recognition. 100 cents on every dollar goes to work.</span></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">2</div><div><strong style=\"color:#fff;\">Immediate charitable deduction.</strong><span style=\"color:rgba(255,255,255,0.6);\"> Equal to the present value of the charitable remainder. For a Young PIF, systematically larger than what a CRT produces for the same client.</span></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">3</div><div><strong style=\"color:#fff;\">Lifetime income.</strong><span style=\"color:rgba(255,255,255,0.6);\"> The donor's proportional share of actual fund earnings, paid for life &mdash; managed by the advisor.</span></div></div></div></div><h3>Why \"Young\" Is the Planning Lever</h3><p>The age of a PIF determines how the IRS calculates the charitable deduction. For an established fund with three or more years of earnings history, the deduction uses the fund's actual highest rate of return over the prior three years. For a Young PIF &mdash; fewer than three taxable years &mdash; Treasury Regulation Section 1.642(c)-6(e)(2) mandates a deemed rate: the highest Section 7520 rate in the three-month period ending with the contribution month, reduced by one percentage point.</p><p>A lower rate means the IRS assumes less will be distributed to the donor. Less income to the donor means more passes to charity. More to charity means a higher present value of the remainder. <strong style=\"color:#fff;\">A higher remainder value means a larger charitable deduction.</strong></p><div style=\"background:rgba(0,119,123,0.08);border:1px solid rgba(0,119,123,0.25);border-radius:8px;padding:20px 24px;margin:22px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,180,180,0.6);margin-bottom:12px;\">Illustrative: $1M gift, age 55, March 2026</div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid rgba(255,255,255,0.1);border-radius:6px;overflow:hidden;font-size:13px;\"><div style=\"padding:9px 12px;background:rgba(255,255,255,0.05);font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\"></div><div style=\"padding:9px 12px;background:rgba(0,119,123,0.2);font-size:10px;font-weight:700;color:#7AE8EC;text-transform:uppercase;\">Young PIF</div><div style=\"padding:9px 12px;background:rgba(255,255,255,0.04);font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\">5% CRUT</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">Rate used</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">~3.80% (deemed)</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">4.80% (7520)</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">Deduction</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">~$370K-$400K</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">~$230K-$260K</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">10% remainder test</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">Not required</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.72);\">Must satisfy</div></div><div style=\"font-size:12px;color:rgba(255,255,255,0.25);margin-top:10px;font-style:italic;\">Illustrative only. Compute using IRS Publication 1457 Table S and the Section 7520 rate for the month of contribution.</div></div><h3>The Problem the PIF Solves That the CRT Cannot</h3><p>For a CRT to be valid under IRC Section 664(d), the present value of the charitable remainder must equal at least 10% of the initial contribution. For younger donors &mdash; and for any multi-life arrangement involving a younger co-beneficiary &mdash; this is mathematically impossible. A 35-year-old will almost always fail the 10% test. A 45-year-old naming a child as co-beneficiary is nearly guaranteed to fail it.</p><p>Because IRC Section 642(c)(5) contains no cross-reference to the Section 664 remainder test, Pooled Income Funds are exempt entirely. A 30-year-old can fund a PIF, receive an immediate deduction, and provide lifetime income for themselves and a younger family member &mdash; a planning outcome simply unavailable through any CRT structure.</p><h3>Three Client Situations Where This Conversation Belongs</h3><p><strong style=\"color:#fff;font-size:16px;\">The Liquidity Event</strong></p><p>A client in their 40s with a concentrated low-basis equity position faces 23.8% federal capital gains plus state tax on any sale. Contributing to a Young PIF allows the fund to sell at full market value with no capital gains recognition, reinvest 100% of proceeds, and return quarterly income for life. The immediate deduction offsets ordinary income in a typically high-income year &mdash; and easily clears the OBBBA 0.5% AGI floor discussed below.</p><div style=\"background:rgba(200,154,58,0.1);border-left:3px solid #C89A3A;padding:14px 18px;border-radius:0 6px 6px 0;margin:18px 0;\"><p style=\"font-size:14px;line-height:1.65;color:rgba(255,255,255,0.7);margin:0;\"><strong style=\"color:#C89A3A;\">Step-transaction warning:</strong> The transfer must be completed before any binding commitment to sell. Post-commitment transfers are subject to IRS step-transaction challenge, exactly as with CRTs.</p></div><p><strong style=\"color:#fff;font-size:16px;\">Intergenerational Income Planning</strong></p><p>A 45-year-old can name themselves and a 20-year-old child as co-income beneficiaries. The combined life expectancy makes a CRT non-viable. A PIF places no such restriction. The deduction is calculated using the youngest beneficiary's life expectancy &mdash; so a 55-year-old naming a 25-year-old child receives a deduction equivalent to a much younger solo donor, while both receive income for their respective lifetimes.</p><p><strong style=\"color:#fff;font-size:16px;\">Roth Conversion Support</strong></p><p>A PIF contribution in the same year as a large Roth conversion can partially or fully offset the ordinary income event. Important: IRA assets should not be contributed directly &mdash; the Income in Respect of a Decedent distinction means a CRT is generally more favorable for retirement account assets. Fund the PIF with appreciated securities; separately execute the conversion; net the deduction against the conversion income.</p><h3>The OBBBA Dimension: 2026 and Beyond</h3><p>Effective for tax years beginning after December 31, 2025, itemizing taxpayers may only deduct charitable contributions exceeding 0.5% of AGI. Amounts disallowed generally cannot be carried forward. For most donors making routine annual gifts, this floor adds real complexity. For PIF contributors it is operationally irrelevant &mdash; a deduction of $300,000 or more on a $750,000 gift clears the floor in virtually every case for this vehicle's target client. The floor targets small dispersed gifts, not large irrevocable transfers. The OBBBA also reinforces bunching: a PIF contribution is inherently a single large irrevocable transfer with the full deduction in year one.</p><h3>What the Advisor Retains</h3><p>The advisor is appointed as investment sub-advisor for the PIF assets they bring in. Assets remain at the advisor's existing custodian, titled in the sponsoring organization's name as trustee, managed under the advisor's existing discretionary agreement &mdash; subject to an approved Investment Policy Statement and prohibited holdings list. GiftingNetwork handles all IRS filings, K-1 preparation, and quarterly distribution calculations. The client relationship and the AUM stay with the advisor. No custom trust drafting &mdash; the client signs a standardized Joinder Agreement and assets transfer.</p><h3>Income Character: Not All Ordinary Income</h3><p>Income character follows the underlying asset under IRC Section 652(b) and is preserved through the trust. For qualified dividends, a 37% bracket participant pays 23.8% &mdash; not 40.8%. That is a 17-point spread on the same economic dollars. Long-term capital gains are always allocated to corpus and never reach participants &mdash; portfolio design must be income-focused. Tax-exempt income is not possible; the statute expressly prohibits holding tax-exempt securities under IRC Section 642(c)(5)(B).</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:20px 24px;margin:20px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:14px;\">Income character by portfolio strategy</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:13px;\"><div style=\"padding:11px 13px;background:rgba(0,119,123,0.1);border:1px solid rgba(0,119,123,0.2);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Qualified dividend equity</div><div style=\"color:rgba(255,255,255,0.5);\">23.8% max &middot; 3-4% yield</div></div><div style=\"padding:11px 13px;background:rgba(9,141,202,0.08);border:1px solid rgba(9,141,202,0.2);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Preferred stock</div><div style=\"color:rgba(255,255,255,0.5);\">23.8% max &middot; 5-7% yield</div></div><div style=\"padding:11px 13px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Investment-grade bonds</div><div style=\"color:rgba(255,255,255,0.5);\">Ordinary income &middot; 4-5% yield</div></div><div style=\"padding:11px 13px;background:rgba(200,154,58,0.08);border:1px solid rgba(200,154,58,0.15);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Covered call overlay</div><div style=\"color:rgba(255,255,255,0.5);\">Short-term gain &middot; 1-2%</div></div></div></div><h3>The Rolling Vintage Model</h3><p>The Young designation lasts three taxable years. GiftingNetwork maintains a rolling vintage model &mdash; authorized under Treasury Regulation Section 1.642(c)-5(b)(5) &mdash; launching a new series on a defined cycle so there is always a current Young PIF available. The Philanthropy Protection Act of 1995 allows asset commingling across vintage series for investment efficiency while maintaining separate unit accounting for each series.</p><h3>One Important Distinction: IRD Assets</h3><p>PIFs do not benefit from the same mechanics under IRC Section 642(c)(3) for Income in Respect of a Decedent. When a client's primary asset is a retirement account, a CRT will generally produce a more favorable income tax result. GiftingPension is designed for appreciated securities, not IRD assets. Flag this in every client review involving IRA or pension assets as a potential funding source.</p><h3>Getting Started</h3><p>GiftingPension is not a product for every client. It is a product for the specific client who has been told for years that nothing exists for them &mdash; the younger concentrated-position holder who needs income, wants to give, and cannot access a CRT. Most advisors with a meaningful book have more of them than they realize. Contact GiftingNetwork to discuss a specific client situation.</p><p style=\"margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);font-size:14px;line-height:1.75;color:rgba(255,255,255,0.28);\">GiftingPension is an educational resource. Nothing here constitutes tax, legal, or investment advice. All deduction estimates are illustrative only; verify using IRS Publication 1457 Table S and the applicable Section 7520 rate. Consult qualified counsel before implementing any planned giving strategy. IRC Section 642(c)(5). OBBBA references reflect provisions as of March 2026; implementing regulations had not been issued as of this date.</p>"};
+articles["intro"] = {tag:"Introduction",tagClass:"planning",body:"<h2>Introducing GiftingPension: Pooled Income Funds for the Next Generation of Philanthropic Clients</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:36px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; INTRODUCTION &middot; 14 MIN READ</p><p>Most financial advisors have seen this client before. They are in their late 30s or mid-40s. They have a concentrated position &mdash; founder equity, accumulated RSUs, or a long-held public stock with nearly zero basis. They want to diversify, they have genuine charitable intent, and they need to replace the income that is about to disappear at a liquidity event.</p><p>You run the Charitable Remainder Trust analysis. And then the math locks them out. A 38-year-old funding a CRT almost always fails the 10% remainder test. Add a spouse or a child as a co-beneficiary and it fails for certain. The CRT &mdash; the workhorse of charitable income planning for 50 years &mdash; simply does not work for this client.</p><p>GiftingPension is built for exactly this moment. It is GiftingNetwork's dedicated channel for the Young Pooled Income Fund &mdash; a vehicle that Congress created in 1969 and that the IRS has quietly kept available ever since for the clients most advisors have been telling for years that nothing exists for them.</p><h3>The Vehicle: What a Pooled Income Fund Actually Is</h3><p>A Pooled Income Fund is a charitable trust maintained by a public charitable organization under IRC Section 642(c)(5). It commingles contributions from multiple donors, paying each donor their proportional share of the fund's distributable net income for their lifetime. When the last income beneficiary passes, that donor's share of the principal passes irrevocably to the charitable organization.</p><p>Three structural features make it different from everything else in the charitable planning toolkit:</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:22px 26px;margin:22px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;\">Three structural advantages</div><div style=\"display:flex;flex-direction:column;gap:14px;\"><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">1</div><div><strong style=\"color:#fff;\">Capital gains bypass.</strong><span style=\"color:rgba(255,255,255,0.6);\"> The transfer of appreciated assets to a PIF does not trigger capital gains recognition. 100 cents on every dollar goes to work.</span></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">2</div><div><strong style=\"color:#fff;\">Immediate charitable deduction.</strong><span style=\"color:rgba(255,255,255,0.6);\"> Equal to the present value of the charitable remainder. For a Young PIF, systematically larger than what a CRT produces for the same client.</span></div></div><div style=\"display:flex;gap:14px;align-items:flex-start;\"><div style=\"width:26px;height:26px;border-radius:50%;background:rgba(0,119,123,0.25);border:1px solid rgba(0,119,123,0.5);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;color:#fff;\">3</div><div><strong style=\"color:#fff;\">Lifetime income.</strong><span style=\"color:rgba(255,255,255,0.6);\"> The donor's proportional share of actual fund earnings, paid for life &mdash; managed by the advisor.</span></div></div></div></div><h3>Why \"Young\" Is the Planning Lever</h3><p>The age of a PIF determines how the IRS calculates the charitable deduction. For an established fund with three or more years of earnings history, the deduction uses the fund's actual highest rate of return over the prior three years. For a Young PIF &mdash; fewer than three taxable years &mdash; Treasury Regulation Section 1.642(c)-6(e)(2) mandates a deemed rate: the highest Section 7520 rate in the three-month period ending with the contribution month, reduced by one percentage point.</p><p>A lower rate means the IRS assumes less will be distributed to the donor. Less income to the donor means more passes to charity. More to charity means a higher present value of the remainder. <strong style=\"color:#fff;\">A higher remainder value means a larger charitable deduction.</strong></p><div style=\"background:rgba(0,119,123,0.08);border:1px solid rgba(0,119,123,0.25);border-radius:8px;padding:20px 24px;margin:22px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,180,180,0.6);margin-bottom:12px;\">Illustrative: $1M gift, age 55, March 2026</div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid rgba(255,255,255,0.1);border-radius:6px;overflow:hidden;font-size:13px;\"><div style=\"padding:9px 12px;background:rgba(255,255,255,0.05);font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\"></div><div style=\"padding:9px 12px;background:rgba(0,119,123,0.2);font-size:10px;font-weight:700;color:#7AE8EC;text-transform:uppercase;\">Young PIF</div><div style=\"padding:9px 12px;background:rgba(255,255,255,0.04);font-size:10px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\">5% CRUT</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">Rate used</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">~3.80% (deemed)</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">4.80% (7520)</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">Deduction</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">~$370K-$400K</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">~$230K-$260K</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">10% remainder test</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:#fff;font-weight:700;\">Not required</div><div style=\"padding:9px 12px;border-top:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);\">Must satisfy</div></div><div style=\"font-size:12px;color:rgba(255,255,255,0.25);margin-top:10px;font-style:italic;\">Illustrative only. Compute using IRS Publication 1457 Table S and the Section 7520 rate for the month of contribution.</div></div><h3>The Problem the PIF Solves That the CRT Cannot</h3><p>For a CRT to be valid under IRC Section 664(d), the present value of the charitable remainder must equal at least 10% of the initial contribution. For younger donors &mdash; and for any multi-life arrangement involving a younger co-beneficiary &mdash; this is mathematically impossible. A 35-year-old will almost always fail the 10% test. A 45-year-old naming a child as co-beneficiary is nearly guaranteed to fail it.</p><p>Because IRC Section 642(c)(5) contains no cross-reference to the Section 664 remainder test, Pooled Income Funds are exempt entirely. A 30-year-old can fund a PIF, receive an immediate deduction, and provide lifetime income for themselves and a younger family member &mdash; a planning outcome simply unavailable through any CRT structure.</p><h3>Three Client Situations Where This Conversation Belongs</h3><p><strong style=\"color:#fff;font-size:16px;\">The Liquidity Event</strong></p><p>A client in their 40s with a concentrated low-basis equity position faces 23.8% federal capital gains plus state tax on any sale. Contributing to a Young PIF allows the fund to sell at full market value with no capital gains recognition, reinvest 100% of proceeds, and return quarterly income for life. The immediate deduction offsets ordinary income in a typically high-income year &mdash; and easily clears the OBBBA 0.5% AGI floor discussed below.</p><div style=\"background:rgba(200,154,58,0.1);border-left:3px solid #C89A3A;padding:14px 18px;border-radius:0 6px 6px 0;margin:18px 0;\"><p style=\"font-size:14px;line-height:1.65;color:rgba(255,255,255,0.7);margin:0;\"><strong style=\"color:#C89A3A;\">Step-transaction warning:</strong> The transfer must be completed before any binding commitment to sell. Post-commitment transfers are subject to IRS step-transaction challenge, exactly as with CRTs.</p></div><p><strong style=\"color:#fff;font-size:16px;\">Intergenerational Income Planning</strong></p><p>A 45-year-old can name themselves and a 20-year-old child as co-income beneficiaries. The combined life expectancy makes a CRT non-viable. A PIF places no such restriction. The deduction is calculated using the youngest beneficiary's life expectancy &mdash; so a 55-year-old naming a 25-year-old child receives a deduction equivalent to a much younger solo donor, while both receive income for their respective lifetimes.</p><p><strong style=\"color:#fff;font-size:16px;\">Roth Conversion Support</strong></p><p>A PIF contribution in the same year as a large Roth conversion can partially or fully offset the ordinary income event. Important: IRA assets should not be contributed directly &mdash; the Income in Respect of a Decedent distinction means a CRT is generally more favorable for retirement account assets. Fund the PIF with appreciated securities; separately execute the conversion; net the deduction against the conversion income.</p><h3>The OBBBA Dimension: 2026 and Beyond</h3><p>Effective for tax years beginning after December 31, 2025, itemizing taxpayers may only deduct charitable contributions exceeding 0.5% of AGI. Amounts disallowed generally cannot be carried forward. For most donors making routine annual gifts, this floor adds real complexity. For PIF contributors it is operationally irrelevant &mdash; a deduction of $300,000 or more on a $750,000 gift clears the floor in virtually every case for this vehicle's target client. The floor targets small dispersed gifts, not large irrevocable transfers. The OBBBA also reinforces bunching: a PIF contribution is inherently a single large irrevocable transfer with the full deduction in year one.</p><h3>What the Advisor Retains</h3><p>The advisor is appointed as investment sub-advisor for the PIF assets they bring in. Assets remain at the advisor's existing custodian, titled in the sponsoring organization's name as trustee, managed under the advisor's existing discretionary agreement &mdash; subject to an approved Investment Policy Statement and prohibited holdings list. GiftingNetwork handles all IRS filings, K-1 preparation, and quarterly distribution calculations. The client relationship and the AUM stay with the advisor. No custom trust drafting &mdash; the client signs a standardized Joinder Agreement and assets transfer.</p><h3>Income Character: Not All Ordinary Income</h3><p>Income character follows the underlying asset under IRC Section 652(b) and is preserved through the trust. For qualified dividends, a 37% bracket participant pays 23.8% &mdash; not 40.8%. That is a 17-point spread on the same economic dollars. Long-term capital gains are always allocated to corpus and never reach participants &mdash; portfolio design must be income-focused. Tax-exempt income is not possible; the statute expressly prohibits holding tax-exempt securities under IRC Section 642(c)(5)(B).</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:20px 24px;margin:20px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:14px;\">Income character by portfolio strategy</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:13px;\"><div style=\"padding:11px 13px;background:rgba(0,119,123,0.1);border:1px solid rgba(0,119,123,0.2);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Qualified dividend equity</div><div style=\"color:rgba(255,255,255,0.5);\">23.8% max &middot; 3-4% yield</div></div><div style=\"padding:11px 13px;background:rgba(9,141,202,0.08);border:1px solid rgba(9,141,202,0.2);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Preferred stock</div><div style=\"color:rgba(255,255,255,0.5);\">23.8% max &middot; 5-7% yield</div></div><div style=\"padding:11px 13px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Investment-grade bonds</div><div style=\"color:rgba(255,255,255,0.5);\">Ordinary income &middot; 4-5% yield</div></div><div style=\"padding:11px 13px;background:rgba(200,154,58,0.08);border:1px solid rgba(200,154,58,0.15);border-radius:6px;\"><div style=\"color:#fff;font-weight:700;margin-bottom:3px;\">Covered call overlay</div><div style=\"color:rgba(255,255,255,0.5);\">Short-term gain &middot; 1-2%</div></div></div></div><h3>The Rolling Vintage Model</h3><p>The Young designation lasts three taxable years. GiftingNetwork maintains a rolling vintage model &mdash; authorized under Treasury Regulation Section 1.642(c)-5(b)(5) &mdash; launching a new series on a defined cycle so there is always a current Young PIF available. The Philanthropy Protection Act of 1995 allows asset commingling across vintage series for investment efficiency while maintaining separate unit accounting for each series.</p><h3>One Important Distinction: IRD Assets</h3><p>PIFs do not benefit from the same mechanics under IRC Section 642(c)(3) for Income in Respect of a Decedent. When a client's primary asset is a retirement account, a CRT will generally produce a more favorable income tax result. GiftingPension is designed for appreciated securities, not IRD assets. Flag this in every client review involving IRA or pension assets as a potential funding source.</p><h3>Getting Started</h3><p>GiftingPension is not a product for every client. It is a product for the specific client who has been told for years that nothing exists for them &mdash; the younger concentrated-position holder who needs income, wants to give, and cannot access a CRT. Most advisors with a meaningful book have more of them than they realize. Contact GiftingNetwork to discuss a specific client situation.</p><p style=\"margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);font-size:12.5px;line-height:1.75;color:rgba(255,255,255,0.28);\">GiftingPension is an educational resource. Nothing here constitutes tax, legal, or investment advice. All deduction estimates are illustrative only; verify using IRS Publication 1457 Table S and the applicable Section 7520 rate. Consult qualified counsel before implementing any planned giving strategy. IRC Section 642(c)(5). OBBBA references reflect provisions as of March 2026; implementing regulations had not been issued as of this date.</p>"};
 articles["mechanics"] = {tag:"Mechanics",tagClass:"mechanics",body:"<h2>How the Young PIF Works: A Complete Technical Primer</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; MECHANICS &middot; 8 MIN READ</p><p>A Pooled Income Fund under IRC Section 642(c)(5) is a trust maintained by a public charity that commingles the contributions of multiple donors. Each donor receives a pro-rata share of the fund's actual earnings for their lifetime. At death, the donor's share of the principal passes to the sponsoring charity.</p><h3>The deemed rate advantage</h3><p>When a fund lacks three years of earnings history &mdash; making it \"young\" &mdash; the IRS mandates use of a deemed rate rather than actual yield to size the charitable deduction. In typical rate environments, this produces a larger deduction. The three-year window is statutory and not elective.</p><h3>Capital gains bypass</h3><p>Appreciated assets contributed to a PIF do not trigger immediate capital gains recognition. The full fair market value enters the fund. 100 cents on the dollar begins earning returns &mdash; compounding over the donor's lifetime rather than after a 23.8% haircut at contribution.</p><h3>The three return tranches</h3><p>The Young PIF produces three distinct financial advantages: (1) capital gains avoided and reinvested, (2) the charitable deduction tax savings reinvested, and (3) the income advantage from earning on the full pre-tax position rather than the after-tax proceeds. For a 35-year-old with a $5M position, the combined advantage over 30 years typically reaches $10-16M depending on assumptions.</p>"};
 articles["comparison"] = {tag:"Comparison",tagClass:"planning",body:"<h2>Young PIF vs. CRT: Which Vehicle Wins?</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; COMPARISON &middot; 5 MIN READ</p><p>Both vehicles share the same core structure: contribute appreciated assets, avoid capital gains, receive income for life, give the remainder to charity. But they differ significantly in administration, cost, and income calculation.</p><h3>Administration</h3><p>A Charitable Remainder Trust is a separate trust created for a single donor &mdash; requiring trust drafting, a separate tax ID, annual tax filings (Form 5227), and ongoing trustee administration. A Young PIF is a pooled fund administered by GiftingNetwork on behalf of multiple donors &mdash; dramatically lower cost and zero administrative burden on the donor or advisor.</p><h3>Income calculation</h3><p>A CRT pays a fixed percentage of assets (CRUT) or a fixed dollar amount (CRAT). A Young PIF pays actual fund earnings &mdash; which means the investment strategy directly determines income. For advisors managing high-dividend portfolios, the PIF income model aligns naturally with existing strategies.</p><h3>Deduction calculation</h3><p>The Young PIF's deduction uses the deemed rate (typically lower than actual yield), producing a larger deduction in moderate rate environments. A CRUT deduction is calculated using the Section 7520 rate &mdash; which moves with interest rates and can be higher than the PIF deemed rate in rising rate environments.</p><div style=\"overflow-x:auto;margin:22px 0;\"><table style=\"width:100%;border-collapse:collapse;font-size:14px;\"><thead><tr style=\"border-bottom:2px solid rgba(0,119,123,0.4);\"><th style=\"padding:9px 12px;text-align:left;font-size:11px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\">Feature</th><th style=\"padding:9px 12px;text-align:left;font-size:11px;font-weight:700;color:#7AE8EC;text-transform:uppercase;\">Young PIF</th><th style=\"padding:9px 12px;text-align:left;font-size:11px;font-weight:700;color:rgba(255,255,255,0.4);text-transform:uppercase;\">CRT (CRUT)</th></tr></thead><tbody style=\"color:rgba(255,255,255,0.6);\"><tr style=\"border-bottom:1px solid rgba(255,255,255,0.08);\"><td style=\"padding:9px 12px;\">Administration</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">GiftingNetwork handles all</td><td style=\"padding:9px 12px;\">Trustee required</td></tr><tr style=\"border-bottom:1px solid rgba(255,255,255,0.08);\"><td style=\"padding:9px 12px;\">Setup cost</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">Low (pooled)</td><td style=\"padding:9px 12px;\">$5K-$20K+ drafting</td></tr><tr style=\"border-bottom:1px solid rgba(255,255,255,0.08);\"><td style=\"padding:9px 12px;\">Income type</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">Actual fund earnings</td><td style=\"padding:9px 12px;\">Fixed % or fixed $</td></tr><tr style=\"border-bottom:1px solid rgba(255,255,255,0.08);\"><td style=\"padding:9px 12px;\">Multiple beneficiaries</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">Yes - any combination</td><td style=\"padding:9px 12px;\">Yes</td></tr><tr style=\"border-bottom:1px solid rgba(255,255,255,0.08);\"><td style=\"padding:9px 12px;\">Minimum efficient size</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">~$1M</td><td style=\"padding:9px 12px;\">~$2M</td></tr><tr><td style=\"padding:9px 12px;\">Best for</td><td style=\"padding:9px 12px;color:#fff;font-weight:700;\">Younger donors, advisor-managed</td><td style=\"padding:9px 12px;\">Fixed income need, unique assets</td></tr></tbody></table></div>"};
 articles["strategy"] = {tag:"Strategy",tagClass:"strategy",body:"<h2>Choosing the Young PIF Investment Strategy</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; STRATEGY &middot; 6 MIN READ</p><p>The Young PIF distributes the fund's actual earnings &mdash; meaning investment strategy directly determines the quantum and tax character of lifetime income distributions. Two approaches are most common for GiftingNetwork clients.</p><h3>High qualified dividend strategy</h3><p>A portfolio of high-quality dividend-paying equities &mdash; dividend aristocrats, preferred shares, select REITs. Target yield: 4-5%. The majority of distributions are taxed at preferential long-term capital gains rates. This is the default strategy for most GiftingNetwork clients &mdash; tax-efficient, moderate yield, with the growth component compounding over time.</p><h3>Dividend capture strategy</h3><p>A more active approach that acquires positions before ex-dividend dates across sectors. Target yield: 6-8% gross. A portion of distributions may be characterized as ordinary income rather than qualified dividends.</p><div style=\"background:rgba(200,154,58,0.1);border-left:3px solid #C89A3A;padding:16px 20px;border-radius:0 6px 6px 0;margin-top:18px;\"><p style=\"font-size:15px;line-height:1.65;color:rgba(255,255,255,0.7);margin:0;\"><strong style=\"color:#C89A3A;\">Key point:</strong> GiftingNetwork models both strategies for each client. In most cases, the high qualified dividend approach produces superior net after-tax income for donors in the 37% bracket &mdash; despite the lower gross yield.</p></div>"};
-articles["children"] = {tag:"Children",tagClass:"planning",body:"<h2>Young Donors with Children: Multigenerational Planning</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; PLANNING &middot; 9 MIN READ</p><p>A Pooled Income Fund can designate more than one income beneficiary on a single contribution. A donor age 55 can name themselves and their adult children as joint beneficiaries. Income distributions are made to all named beneficiaries for their respective lifetimes.</p><h3>Multiple income beneficiaries: how it works</h3><p>The income stream continues to surviving children for their lifetimes. A donor who is 55 today might have children who live into their 80s or 90s. The cash flow from a single contribution in 2025 could still be flowing to beneficiaries in 2085.</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:20px 24px;margin:20px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:12px;\">Example: multi-beneficiary scenario</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;\"><div><div style=\"font-size:12px;color:rgba(255,255,255,0.50);margin-bottom:3px;\">Donor</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">Age 55, parent</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.50);margin-bottom:3px;\">Children as co-beneficiaries</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">Ages 28 and 25</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.50);margin-bottom:3px;\">Youngest life expectancy</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">~57 years (age 25)</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.50);margin-bottom:3px;\">Effective income horizon</div><div style=\"font-size:15px;font-weight:700;color:#7AE8EC;\">Until ~2082</div></div></div><div style=\"padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);\"><p style=\"font-size:14px;color:rgba(255,255,255,0.72);margin:0;\">The deduction is calculated using the <strong style=\"color:#fff;\">youngest beneficiary's</strong> life expectancy, producing a <strong style=\"color:#7AE8EC;\">larger charitable deduction</strong>.</p></div></div><h3>The deduction effect of naming children</h3><p>A 55-year-old donor naming a 25-year-old child produces a remainder factor equivalent to a 25-year-old solo donor &mdash; while the donor also receives income for their own lifetime. For advisors working with clients who said \"I'm too old for this\" &mdash; this is the reframe.</p><h3>The wealth replacement strategy</h3><p>A portion of the annual PIF income can fund an Irrevocable Life Insurance Trust (ILIT). The ILIT holds a policy on the donor, with remaining heirs as beneficiaries. At death, the insurance proceeds &mdash; received income-tax-free &mdash; replace the asset value that passes to charity.</p><div style=\"background:rgba(0,119,123,0.1);border-left:3px solid #00777B;padding:16px 20px;border-radius:0 6px 6px 0;margin-top:18px;\"><p style=\"font-size:15px;line-height:1.65;color:rgba(255,255,255,0.7);margin:0;\"><strong style=\"color:#7AE8EC;\">GiftingNetwork models multi-beneficiary scenarios:</strong> We run the full analysis for any combination of donor and children ages. Contact us with the ages and position details.</p></div>"};
+articles["children"] = {tag:"Children",tagClass:"planning",body:"<h2>Young Donors with Children: Multigenerational Planning</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; PLANNING &middot; 9 MIN READ</p><p>A Pooled Income Fund can designate more than one income beneficiary on a single contribution. A donor age 55 can name themselves and their adult children as joint beneficiaries. Income distributions are made to all named beneficiaries for their respective lifetimes.</p><h3>Multiple income beneficiaries: how it works</h3><p>The income stream continues to surviving children for their lifetimes. A donor who is 55 today might have children who live into their 80s or 90s. The cash flow from a single contribution in 2025 could still be flowing to beneficiaries in 2085.</p><div style=\"background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:20px 24px;margin:20px 0;\"><div style=\"font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:12px;\">Example: multi-beneficiary scenario</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;\"><div><div style=\"font-size:12px;color:rgba(255,255,255,0.35);margin-bottom:3px;\">Donor</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">Age 55, parent</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.35);margin-bottom:3px;\">Children as co-beneficiaries</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">Ages 28 and 25</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.35);margin-bottom:3px;\">Youngest life expectancy</div><div style=\"font-size:15px;font-weight:700;color:#fff;\">~57 years (age 25)</div></div><div><div style=\"font-size:12px;color:rgba(255,255,255,0.35);margin-bottom:3px;\">Effective income horizon</div><div style=\"font-size:15px;font-weight:700;color:#7AE8EC;\">Until ~2082</div></div></div><div style=\"padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);\"><p style=\"font-size:14px;color:rgba(255,255,255,0.55);margin:0;\">The deduction is calculated using the <strong style=\"color:#fff;\">youngest beneficiary's</strong> life expectancy, producing a <strong style=\"color:#7AE8EC;\">larger charitable deduction</strong>.</p></div></div><h3>The deduction effect of naming children</h3><p>A 55-year-old donor naming a 25-year-old child produces a remainder factor equivalent to a 25-year-old solo donor &mdash; while the donor also receives income for their own lifetime. For advisors working with clients who said \"I'm too old for this\" &mdash; this is the reframe.</p><h3>The wealth replacement strategy</h3><p>A portion of the annual PIF income can fund an Irrevocable Life Insurance Trust (ILIT). The ILIT holds a policy on the donor, with remaining heirs as beneficiaries. At death, the insurance proceeds &mdash; received income-tax-free &mdash; replace the asset value that passes to charity.</p><div style=\"background:rgba(0,119,123,0.1);border-left:3px solid #00777B;padding:16px 20px;border-radius:0 6px 6px 0;margin-top:18px;\"><p style=\"font-size:15px;line-height:1.65;color:rgba(255,255,255,0.7);margin:0;\"><strong style=\"color:#7AE8EC;\">GiftingNetwork models multi-beneficiary scenarios:</strong> We run the full analysis for any combination of donor and children ages. Contact us with the ages and position details.</p></div>"};
 articles["irc"] = {tag:"Irc",tagClass:"mechanics",body:"<h2>IRC Section 642(c)(5) and the Deemed Rate: The Statutory Foundation</h2><p style=\"font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:32px;letter-spacing:.06em;\">GIFTINGNETWORK &middot; TECHNICAL &middot; 10 MIN READ</p><p>The Young PIF's deduction advantage is not a planning strategy or a grey-area interpretation. It is the explicit, mandatory result of the statutory language in IRC Section 642(c)(5) and the Treasury regulations thereunder.</p><h3>The statutory framework</h3><p>IRC Section 642(c)(5) defines a Pooled Income Fund and establishes the rules for the charitable deduction. The deduction equals the present value of the charity's remainder interest, discounted using the fund's highest 3-year earnings rate. The critical exception: Treasury Regulation Section 1.642(c)-6(e)(2) mandates use of the deemed rate when a fund lacks three years of earnings history.</p><h3>How the deemed rate is set</h3><p>The deemed rate equals the highest Section 7520 rate in effect during the 3-month period ending with the month of contribution, reduced by one percentage point (floor of 1%). The applicable rate is for the month of contribution &mdash; the donor may elect the prior month's rate if more favorable.</p><h3>Why this produces a larger deduction</h3><p>A lower deemed rate means the charity's remainder is discounted less heavily &mdash; its present value is larger. The donor's deduction equals this present value. When the deemed rate falls below a well-managed established fund's actual yield, the Young PIF produces a systematically larger deduction.</p><p>This is entirely consistent with the statute as written. It is the explicit outcome Congress intended when it created the deemed rate provision &mdash; reducing the administrative burden of the young fund while producing a calculable deduction.</p>"};
 function openArticle(key){
   var a=articles[key];if(!a)return;
