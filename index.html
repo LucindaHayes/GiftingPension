@@ -44,6 +44,11 @@
   --font-mono:'DM Mono',monospace;
   --max:1120px;
 }
+
+/* Offset anchor target so #contact isn't hidden under fixed nav */
+#contact{
+  scroll-margin-top:calc(var(--nav-height) + 12px);
+}
 html{scroll-behavior:smooth;}
 body{font-family:var(--font-body);background:var(--navy-deeper);color:#fff;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
 ::-webkit-scrollbar{width:4px;}
