@@ -963,9 +963,17 @@ var navEl=document.querySelector('nav');
 window.addEventListener('scroll',function(){navEl.style.background=window.scrollY>50?'rgba(5,13,24,0.98)':'rgba(8,30,54,0.96)';});
 
 document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click',function(e){
-    var t=document.querySelector(a.getAttribute('href'));
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  a.addEventListener('click', function(e){
+    var href = a.getAttribute('href');
+    var t = document.querySelector(href);
+    if (!t) return;
+
+    if (href === '#contact') {
+      return;
+    }
+
+    e.preventDefault();
+    t.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 </script>
