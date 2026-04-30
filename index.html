@@ -351,7 +351,15 @@ footer{background:#050D18;border-top:1px solid rgba(0,119,123,0.15);padding:52px
   @media(max-width:580px){
     .sh2 { font-size:clamp(24px,7vw,36px) !important; }
     .hero-actions { flex-direction:column; align-items:flex-start; }
+}
+
+/* Contact form layout on smaller screens */
+@media (max-width: 900px) {
+  .cta-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
+}
 </style>
 </head>
 <body>
